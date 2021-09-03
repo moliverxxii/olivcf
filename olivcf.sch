@@ -651,4 +651,6 @@ Wire Wire Line
 	3750 2600 3550 2600
 Wire Wire Line
 	1050 1400 1200 1400
+Text Notes 1600 2350 0    50   ~ 0
+tested and approved\nwith 4.5V for example !
 $EndSCHEMATC
