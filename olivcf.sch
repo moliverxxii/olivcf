@@ -1,4 +1,365 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 29 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM324 U?
+U 1 1 61327379
+P 2000 1850
+F 0 "U?" H 2000 2217 50  0000 C CNN
+F 1 "LM324" H 2000 2126 50  0000 C CNN
+F 2 "" H 1950 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2050 2050 50  0001 C CNN
+	1    2000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U?
+U 2 1 61329748
+P 3550 1950
+F 0 "U?" H 3550 1583 50  0000 C CNN
+F 1 "LM324" H 3550 1674 50  0000 C CNN
+F 2 "" H 3500 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 3600 2150 50  0001 C CNN
+	2    3550 1950
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U?
+U 3 1 6132A568
+P 5650 1850
+F 0 "U?" H 5650 1483 50  0000 C CNN
+F 1 "LM324" H 5650 1574 50  0000 C CNN
+F 2 "" H 5600 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5700 2050 50  0001 C CNN
+	3    5650 1850
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U?
+U 4 1 6132B14E
+P 7100 1950
+F 0 "U?" H 7100 1583 50  0000 C CNN
+F 1 "LM324" H 7100 1674 50  0000 C CNN
+F 2 "" H 7050 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7150 2150 50  0001 C CNN
+	4    7100 1950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6132D2C8
+P 1200 1950
+F 0 "R?" V 993 1950 50  0000 C CNN
+F 1 "R" V 1084 1950 50  0000 C CNN
+F 2 "" V 1130 1950 50  0001 C CNN
+F 3 "~" H 1200 1950 50  0001 C CNN
+	1    1200 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6132DED1
+P 2000 2300
+F 0 "R?" V 2207 2300 50  0000 C CNN
+F 1 "R" V 2116 2300 50  0000 C CNN
+F 2 "" V 1930 2300 50  0001 C CNN
+F 3 "~" H 2000 2300 50  0001 C CNN
+	1    2000 2300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1850 2300 1550 2300
+Wire Wire Line
+	1550 2300 1550 1950
+Wire Wire Line
+	1550 1950 1700 1950
+Wire Wire Line
+	1350 1950 1550 1950
+Connection ~ 1550 1950
+Wire Wire Line
+	2150 2300 2450 2300
+Wire Wire Line
+	2450 2300 2450 1850
+Wire Wire Line
+	2450 1850 2300 1850
+$Comp
+L Transistor_FET:BF245C Q?
+U 1 1 61330A1B
+P 2750 1750
+F 0 "Q?" V 2985 1750 50  0000 C CNN
+F 1 "BF245C" V 3076 1750 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2950 1675 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BF/BF245A.pdf" H 2750 1700 50  0001 L CNN
+	1    2750 1750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2450 1850 2550 1850
+Connection ~ 2450 1850
+Wire Wire Line
+	2950 1850 3150 1850
+$Comp
+L Device:C C?
+U 1 1 61336993
+P 3550 1400
+F 0 "C?" V 3298 1400 50  0000 C CNN
+F 1 "C" V 3389 1400 50  0000 C CNN
+F 2 "" H 3588 1250 50  0001 C CNN
+F 3 "~" H 3550 1400 50  0001 C CNN
+	1    3550 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 1400 3150 1400
+Wire Wire Line
+	3150 1400 3150 1850
+Connection ~ 3150 1850
+Wire Wire Line
+	3150 1850 3250 1850
+Wire Wire Line
+	3850 1950 3950 1950
+Wire Wire Line
+	3950 1950 3950 1400
+Wire Wire Line
+	3950 1400 3700 1400
+Wire Wire Line
+	5350 1750 5250 1750
+Wire Wire Line
+	5250 1750 5250 1400
+Wire Wire Line
+	5250 1400 6050 1400
+Wire Wire Line
+	6050 1400 6050 1850
+Wire Wire Line
+	6050 1850 5950 1850
+$Comp
+L Device:R R?
+U 1 1 6133C1ED
+P 4900 1950
+F 0 "R?" V 4693 1950 50  0000 C CNN
+F 1 "R" V 4784 1950 50  0000 C CNN
+F 2 "" V 4830 1950 50  0001 C CNN
+F 3 "~" H 4900 1950 50  0001 C CNN
+	1    4900 1950
+	0    1    1    0   
+$EndComp
+Connection ~ 3950 1950
+Wire Wire Line
+	5050 1950 5200 1950
+$Comp
+L Device:R R?
+U 1 1 6133D5F6
+P 4900 2400
+F 0 "R?" V 4693 2400 50  0000 C CNN
+F 1 "R" V 4784 2400 50  0000 C CNN
+F 2 "" V 4830 2400 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+	1    4900 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2400 5200 2400
+Wire Wire Line
+	5200 2400 5200 1950
+Connection ~ 5200 1950
+Wire Wire Line
+	5200 1950 5350 1950
+$Comp
+L Transistor_FET:BF245C Q?
+U 1 1 6133E07A
+P 6400 1750
+F 0 "Q?" V 6635 1750 50  0000 C CNN
+F 1 "BF245C" V 6726 1750 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6600 1675 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BF/BF245A.pdf" H 6400 1700 50  0001 L CNN
+	1    6400 1750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6050 1850 6200 1850
+Connection ~ 6050 1850
+Wire Wire Line
+	6600 1850 6700 1850
+$Comp
+L Device:C C?
+U 1 1 6134011C
+P 7100 1400
+F 0 "C?" V 6848 1400 50  0000 C CNN
+F 1 "C" V 6939 1400 50  0000 C CNN
+F 2 "" H 7138 1250 50  0001 C CNN
+F 3 "~" H 7100 1400 50  0001 C CNN
+	1    7100 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 1850 6700 1400
+Wire Wire Line
+	6700 1400 6950 1400
+Connection ~ 6700 1850
+Wire Wire Line
+	6700 1850 6800 1850
+Wire Wire Line
+	7250 1400 7500 1400
+Wire Wire Line
+	7500 1400 7500 1950
+Wire Wire Line
+	7500 1950 7400 1950
+$Comp
+L Device:R R?
+U 1 1 61341635
+P 2450 2500
+F 0 "R?" H 2381 2454 50  0000 R CNN
+F 1 "R" H 2381 2545 50  0000 R CNN
+F 2 "" V 2380 2500 50  0001 C CNN
+F 3 "~" H 2450 2500 50  0001 C CNN
+	1    2450 2500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2450 2350 2450 2300
+Connection ~ 2450 2300
+$Comp
+L Device:R R?
+U 1 1 613423B0
+P 3950 2300
+F 0 "R?" H 3881 2254 50  0000 R CNN
+F 1 "R" H 3881 2345 50  0000 R CNN
+F 2 "" V 3880 2300 50  0001 C CNN
+F 3 "~" H 3950 2300 50  0001 C CNN
+	1    3950 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3950 2150 3950 1950
+$Comp
+L Device:R R?
+U 1 1 61343930
+P 6050 2250
+F 0 "R?" H 5981 2204 50  0000 R CNN
+F 1 "R" H 5981 2295 50  0000 R CNN
+F 2 "" V 5980 2250 50  0001 C CNN
+F 3 "~" H 6050 2250 50  0001 C CNN
+	1    6050 2250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6050 2100 6050 1850
+$Comp
+L Device:R R?
+U 1 1 613446AC
+P 7500 2300
+F 0 "R?" H 7431 2254 50  0000 R CNN
+F 1 "R" H 7431 2345 50  0000 R CNN
+F 2 "" V 7430 2300 50  0001 C CNN
+F 3 "~" H 7500 2300 50  0001 C CNN
+	1    7500 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7500 2150 7500 1950
+Connection ~ 7500 1950
+$Comp
+L power:GND #PWR?
+U 1 1 61345512
+P 2450 2750
+F 0 "#PWR?" H 2450 2500 50  0001 C CNN
+F 1 "GND" H 2455 2577 50  0000 C CNN
+F 2 "" H 2450 2750 50  0001 C CNN
+F 3 "" H 2450 2750 50  0001 C CNN
+	1    2450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2750 2450 2650
+$Comp
+L power:GND #PWR?
+U 1 1 613461E3
+P 3950 2600
+F 0 "#PWR?" H 3950 2350 50  0001 C CNN
+F 1 "GND" H 3955 2427 50  0000 C CNN
+F 2 "" H 3950 2600 50  0001 C CNN
+F 3 "" H 3950 2600 50  0001 C CNN
+	1    3950 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2600 3950 2450
+$Comp
+L power:GND #PWR?
+U 1 1 61346D73
+P 6050 2500
+F 0 "#PWR?" H 6050 2250 50  0001 C CNN
+F 1 "GND" H 6055 2327 50  0000 C CNN
+F 2 "" H 6050 2500 50  0001 C CNN
+F 3 "" H 6050 2500 50  0001 C CNN
+	1    6050 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2500 6050 2400
+$Comp
+L power:GND #PWR?
+U 1 1 6134786C
+P 7500 2550
+F 0 "#PWR?" H 7500 2300 50  0001 C CNN
+F 1 "GND" H 7505 2377 50  0000 C CNN
+F 2 "" H 7500 2550 50  0001 C CNN
+F 3 "" H 7500 2550 50  0001 C CNN
+	1    7500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2550 7500 2450
+Wire Wire Line
+	7500 1950 8350 1950
+Text Label 8350 1950 2    50   ~ 0
+OUTPUT
+Text Label 4350 2150 2    50   ~ 0
+OUTPUT
+Wire Wire Line
+	3950 1950 4750 1950
+$Comp
+L Device:R_POT RV?
+U 1 1 61354172
+P 4450 2400
+F 0 "RV?" H 4380 2354 50  0000 R CNN
+F 1 "R_POT" H 4380 2445 50  0000 R CNN
+F 2 "" H 4450 2400 50  0001 C CNN
+F 3 "~" H 4450 2400 50  0001 C CNN
+	1    4450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2400 4750 2400
+Wire Wire Line
+	4350 2150 4450 2150
+Wire Wire Line
+	4450 2150 4450 2250
+Text Label 850  1950 2    50   ~ 0
+OUTPUT
+Wire Wire Line
+	850  1950 1050 1950
+$Comp
+L Device:C C?
+U 1 1 6135A718
+P 1400 1300
+F 0 "C?" V 1148 1300 50  0000 C CNN
+F 1 "C" V 1239 1300 50  0000 C CNN
+F 2 "" H 1438 1150 50  0001 C CNN
+F 3 "~" H 1400 1300 50  0001 C CNN
+	1    1400 1300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
