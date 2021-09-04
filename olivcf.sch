@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:olivcf-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -163,8 +164,8 @@ $Comp
 L Device:C C3
 U 1 1 6134011C
 P 7250 1500
-F 0 "C3" V 6998 1500 50  0000 C CNN
-F 1 "100nF" V 7089 1500 50  0000 C CNN
+F 0 "C3" V 7100 1300 50  0000 C CNN
+F 1 "100nF" V 7100 1500 50  0000 C CNN
 F 2 "" H 7288 1350 50  0001 C CNN
 F 3 "~" H 7250 1500 50  0001 C CNN
 	1    7250 1500
@@ -653,4 +654,46 @@ Wire Wire Line
 	1050 1400 1200 1400
 Text Notes 1600 2350 0    50   ~ 0
 tested and approved\nwith 4.5V for example !
+$Comp
+L Diode:1N4148 D2
+U 1 1 61345052
+P 7250 1250
+F 0 "D2" H 7100 1350 50  0000 C CNN
+F 1 "1N4148" H 7350 1350 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7250 1075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7250 1250 50  0001 C CNN
+	1    7250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 6134782E
+P 7250 1000
+F 0 "D1" H 7100 1100 50  0000 C CNN
+F 1 "1N4148" H 7350 1100 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7250 825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7250 1000 50  0001 C CNN
+	1    7250 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1500 6850 1250
+Wire Wire Line
+	6850 1000 7100 1000
+Connection ~ 6850 1500
+Wire Wire Line
+	6850 1250 7100 1250
+Connection ~ 6850 1250
+Wire Wire Line
+	6850 1250 6850 1000
+Wire Wire Line
+	7400 1250 7650 1250
+Wire Wire Line
+	7650 1250 7650 1500
+Connection ~ 7650 1500
+Wire Wire Line
+	7400 1000 7650 1000
+Wire Wire Line
+	7650 1000 7650 1250
+Connection ~ 7650 1250
 $EndSCHEMATC
